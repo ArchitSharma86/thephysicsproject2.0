@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/mbr-96x96.png" type="image/x-icon">
+  <meta name="description" content="Simulating Single Slit Diffraction.">
+  
+  
+  <title>Single Slit Diffraction</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu1 cid-tUUWO23OD8" once="menu" id="menu1-1d">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top collapsed">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobiri.se">
+                        <img src="assets/images/mbr-96x96.webp" alt="Mobirise Website Builder" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="https://mobiri.se">The Physics Project</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#team1-1h">
+                            About us</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="contact.html">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="article11 cid-tUUWcuWMCF" id="article11-1c">
+    
+
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-6">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2">
+                <strong>Single Slit Diffraction</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mt-4 display-7">Gain insights into how changing the width of the slit influences the diffraction pattern of waves.</h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section--no-padding cid-tUUCKngulO mbr-parallax-background" id="witsec-html-block-16">
+
+
+
+
+
+<center>
+
+
+
+<style>
+  #app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .container {
+    width: 500px;
+    border: 3px solid #333;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 7px;
+    margin: 5px;
+  }
+  .slider-container {
+    border: 3px solid #666;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  .button-container {
+    padding: 5px;
+    margin: 5px 0;
+  }
+  .button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+  }
+ .Satz {
+        width: 600px;
+        border: 3px solid #3498db;
+        background-color: #f5f5f5;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+      .Formel {
+        font-weight: bold;
+      }
+      .Formel.Max {
+        color: #27ae60;
+      }
+      .Formel.Min {
+        color: #e74c3c;
+      }
+      .Formel.Abstand {
+        margin-top: 10px;
+      }
+
+</style>
+
+
+  <div id="app-container">
+    <canvas id="myCanvas" width="660" height="400"></canvas>
+
+    <div class="container">
+      <h5><strong>Slit width (micrometers)</strong></h5>
+      <div class="slider-container">
+        0.0 <input type="range" id="v1Value" min="0" max="20" value="10.0" step="1.0" oninput="showa(this.value)" onchange="showa(this.value)"> 20.0
+        <div id="initialaValue">10.0</div>
+      </div>
+    </div>
+<div class="container">
+      <h5><strong>Distance to the screen (meters)</strong></h5>
+      <div class="slider-container">
+        0.0 <input type="range" id="LValue" min="0" max="2" value="1.0" step="0.01" oninput="showL(this.value)" onchange="showL(this.value)"> 2.0
+        <div id="initialLValue">1.0</div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <h5></h5>
+      <button class="button" id="color1" onclick="setColor(0.65)">Red</button>
+      <button class="button" id="color2" onclick="setColor(0.52)">Green</button>
+      <button class="button" id="color3" onclick="setColor(0.4)">Violet</button>
+      <button class="button" id="color4" onclick="setColor(0)">Yellow</button>
+    </div>
+
+
+
+<div class="Satz">
+        <h5>Condition for a maximum (approximation):</h5>
+        <p class="Formel Max">α = 0° → b sin α ≈ (k + ½) λ</p>
+        <p class="Formel Abstand">
+            b = width of slit<br>
+            α = angle<br>
+            k = order of the maximum (1, 2, ...)<br>
+            λ = wavelength
+        </p>
+    </div>
+
+    <div class="Satz">
+        <h5>Condition for a minimum:</h5>
+        <p class="Formel Min">b sin α = k λ</p>
+        <p class="Formel Abstand">
+            b = width of slit<br>
+            α = angle<br>
+            k = order of the minimum (1, 2, ...)<br>
+            λ = wavelength
+        </p>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</center>
+
+  <script>
+
+    function showa(newValue) {
+      //get the element
+      var display = document.getElementById("initialaValue");
+      //show the amount
+      display.innerHTML = newValue;
+      a = Number(newValue);
+      reset();
+    }
+
+    function showd(newValue) {
+      //get the element
+      var display = document.getElementById("initialdValue");
+      //show the amount
+      display.innerHTML = newValue;
+      d = Number(newValue);
+      reset();
+    }
+
+    function showL(newValue) {
+      //get the element
+      var display = document.getElementById("initialLValue");
+      //show the amount
+      display.innerHTML = newValue;
+      L = Number(newValue);
+      reset();
+    }
+
+
+    function setColor(color1) {
+      wavelength = color1;
+      reset();
+    }
+
+    function setOpening(opening1) {
+      openingType = opening1;
+      reset();
+    }
+
+
+    function reset() {
+      index = -1;
+      time = 0.0;
+      x1 = xBase + x1Init;
+      runFlag = 1;
+      drawMotion();
+
+    }
+
+
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var index = -1;
+    var xBase = 100;
+    var yBase = 130;
+    var xInit = 37;
+    var graphType = 1;
+    var graphTitle = 'Intensity';
+    var yAxisTitle = '';
+    var xAxisTitle = 'x (in cm)';
+    var yNumDecimals = 1;
+    var yStart = yBase + 120;
+    var plotColor = '#ff00ff';
+    var radius = 10;
+    var maxTime = 10.0;
+    var x1Init = 0;
+    var x1 = xBase + x1Init;
+    var scenario = 1;
+    var time = 0.0;
+    var deltat = 1 / 20.0;
+    var a = 12.0;
+    var d = 36.0;
+    var L = 1.0;
+    var openingType = 1;
+    var wavelength = 0.65;
+    var yIncrement = 1;
+    var redness;
+    var greenness;
+    var blueness;
+    var redString = "0";
+    var greenString = "0";
+    var blueString = "0";
+    var colorString = "0";
+
+    var timer;
+    var runFlag = 1;
+
+    reset();
+
+    function drawMotion() {
+
+      //    console.log("In the drawMotion function, with runFlag = " + runFlag );
+
+      if (index >= 400) runFlag = 0;
+
+      //    console.log("In the drawMotion function, with runFlag = " + runFlag + " xPos = " + xPos);
+
+      if (runFlag == 1) {    //      run if runFlag equal 1, not if equal 0
+        // clear
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        index = index + 1;
+
+        // set background color for the entire thing
+        context.fillStyle = "#fffd";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        // set background color for the graph
+        context.fillStyle = "#eeff";
+        context.fillRect(xBase, yBase, 400, 160);
+
+        // set background color for the slits and the screen
+        context.fillStyle = "black";
+        context.fillRect(xBase, yBase + 200, 400, 50);
+        context.fillRect(xBase, yBase - 80, 400, 50);
+
+        context.strokeStyle = '#000';
+
+        // vertical grid lines
+        for (var i = 0; i <= 10; i++) {
+          context.beginPath();
+          context.moveTo(xBase + 40 * i, yBase);
+          context.lineTo(xBase + 40 * i, yBase + 166);
+          context.stroke();
+          context.font = '14pt Calibri';
+          context.fillStyle = 'black';
+          context.textAlign = 'center';
+          context.textBaseline = 'middle';
+          axisValue = -10 + 2 * i;
+          axisLabel = axisValue.toFixed(0);
+          context.fillText(axisLabel, xBase + 40 * i, yBase + 175);
+        }
+
+        // horizontal grid lines
+        for (i = 0; i <= 4; i++) {
+          context.beginPath();
+          context.moveTo(xBase - 10, yBase + 40 * i);
+          context.lineTo(xBase + 400, yBase + 40 * i);
+          context.stroke();
+          context.font = '14pt Calibri';
+          context.fillStyle = 'black';
+          context.textAlign = 'center';
+          context.textBaseline = 'middle';
+          axisValue = yIncrement * (4 - i);
+          axisLabel = axisValue.toFixed(yNumDecimals);
+          //          context.fillText(axisLabel, xBase-30, yBase+40*i);
+
+        }
+
+        // x-axis
+        context.strokeStyle = '#000';
+        context.lineWidth = 4;
+        context.beginPath();
+        context.moveTo(xBase - 1, yBase + 160);
+        context.lineTo(xBase + 420, yBase + 160);
+        context.stroke();
+        context.moveTo(xBase + 410, yBase + 160 - 6);
+        context.lineTo(xBase + 420, yBase + 160);
+        context.lineTo(xBase + 410, yBase + 160 + 6);
+        context.lineJoin = 'miter';
+        context.stroke();
+        context.font = '16pt Calibri';
+        context.fillStyle = 'black';
+        context.textAlign = 'left';
+        context.fillText(xAxisTitle, xBase + 428, yBase + 160);
+
+        // y-axis
+        context.strokeStyle = '#000';
+        context.beginPath();
+        context.moveTo(xBase, yBase - 20);
+        context.lineTo(xBase, yBase + 160);
+        context.stroke();
+        context.moveTo(xBase - 6, yBase - 10);
+        context.lineTo(xBase, yBase - 20);
+        context.lineTo(xBase + 6, yBase - 10);
+        context.lineJoin = 'miter';
+        context.stroke();
+        context.strokeStyle = '#000';
+        context.textAlign = 'center';
+        //     context.fillText(yAxisTitle, xBase-45, 22);
+
+        // draw graph
+        context.lineWidth = 2;
+
+        context.strokeStyle = "green";
+        context.fillStyle = "green";
+
+        if (wavelength > 0.64) {
+          context.strokeStyle = "red";
+          context.fillStyle = "red";
+        }
+
+        if (wavelength < 0.41) {
+          context.strokeStyle = "#cc00ff";
+          context.fillStyle = "#cc00ff";
+        }
+
+        if (openingType == 1) {
+          context.beginPath();
+          context.moveTo(xBase, yBase + 160 - (160) * (Math.sin(0.00154 * (-200) * a / (wavelength * L))) / (0.00154 * (-200) * a / (wavelength * L)) * (Math.sin(0.00154 * (-200) * a / (wavelength * L))) / (0.00154 * (-200) * a / (wavelength * L)));
+          for (ival = -199; ival <= 200; ival++) {
+            context.lineTo(xBase + 200 + ival, yBase + 160 - (160) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)));
+          }
+          context.stroke();
+
+          context.fillRect(xBase + 200 - a / 3, yBase + 200 + 5, 2 * a / 3, 40);
+
+          context.lineWidth = 1;
+
+          for (ival = -199; ival <= 199; ival++) {
+            redness = Math.floor((320) * Math.log(1.2 + ((Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)))));
+            //     console.log("In the drawMotion function, with redness = " + redness);
+            greenness = redness;
+            blueness = redness;
+            if (wavelength > 0.64) {
+              greenness = blueness = 1;
+            }
+            else {
+              if (wavelength < 0.41) {
+                greenness = 1;
+              }
+
+              else {
+                redness = blueness = 1;
+              }
+            }
+            redString = redness.toString(16);
+            if (redString.length == 1) redString = "0" + redString;
+            greenString = greenness.toString(16);
+            if (greenString.length == 1) greenString = "0" + greenString;
+            blueString = blueness.toString(16);
+            if (blueString.length == 1) blueString = "0" + blueString;
+
+            colorString = "#" + redString + greenString + blueString;
+            context.strokeStyle = colorString;
+            //      console.log("In the drawMotion function, with redString = " + redString);
+
+            context.beginPath();
+            context.moveTo(xBase + 200 + ival, yBase - 75);
+            context.lineTo(xBase + 200 + ival, yBase - 35);
+            context.stroke();
+          }
+
+        }
+
+        if (openingType == 2) {
+          context.beginPath();
+          context.moveTo(xBase, yBase + 160 - (80) * (1 + Math.cos(0.00308 * (-200) * d / (wavelength * L))));
+          for (ival = -199; ival <= 200; ival++) {
+            context.lineTo(xBase + 200 + ival, yBase + 160 - (80) * (1 + Math.cos(0.00308 * (ival) * d / (wavelength * L))));
+          }
+          context.stroke();
+
+          context.fillRect(xBase + 200 - (d / 3) - (a / 3), yBase + 200 + 5, 2 * a / 3, 40);
+          context.fillRect(xBase + 200 + (d / 3) - (a / 3), yBase + 200 + 5, 2 * a / 3, 40);
+
+          context.lineWidth = 1;
+
+          for (ival = -199; ival <= 199; ival++) {
+            redness = Math.floor((127) * (1 + Math.cos(0.00308 * (ival) * d / (wavelength * L))));
+            greenness = redness;
+            blueness = redness;
+            if (wavelength > 0.64) {
+              greenness = blueness = 1;
+            }
+            else {
+              if (wavelength < 0.41) {
+                greenness = 1;
+              }
+              else {
+                redness = blueness = 1;
+              }
+            }
+            redString = redness.toString(16);
+            if (redString.length == 1) redString = "0" + redString;
+            greenString = greenness.toString(16);
+            if (greenString.length == 1) greenString = "0" + greenString;
+            blueString = blueness.toString(16);
+            if (blueString.length == 1) blueString = "0" + blueString;
+
+            colorString = "#" + redString + greenString + blueString;
+            context.strokeStyle = colorString;
+            //      console.log("In the drawMotion function, with redString = " + redString);
+
+            context.beginPath();
+            context.moveTo(xBase + 200 + ival, yBase - 75);
+            context.lineTo(xBase + 200 + ival, yBase - 35);
+            context.stroke();
+          }
+
+
+        }
+
+        if (openingType == 3) {
+
+          context.strokeStyle = "grey";
+          context.beginPath();
+          context.moveTo(xBase, yBase + 160 - (160) * (Math.sin(0.00154 * (-200) * a / (wavelength * L))) / (0.00154 * (-200) * a / (wavelength * L)) * (Math.sin(0.00154 * (-200) * a / (wavelength * L))) / (0.00154 * (-200) * a / (wavelength * L)));
+          for (ival = -199; ival <= 200; ival++) {
+            context.lineTo(xBase + 200 + ival, yBase + 160 - (160) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)));
+          }
+          context.stroke();
+
+
+          context.strokeStyle = "green";
+          context.fillStyle = "green";
+
+          if (wavelength > 0.64) {
+            context.strokeStyle = "red";
+            context.fillStyle = "red";
+          }
+
+          if (wavelength < 0.41) {
+            context.strokeStyle = "#cc00ff";
+            context.fillStyle = "#cc00ff";
+          }
+
+          context.beginPath();
+          context.moveTo(xBase, yBase + 160 - (80) * (1 + Math.cos(0.00308 * (-200) * d / (wavelength * L))) * (Math.sin(0.00154 * (-200) * a / (wavelength * L))) / (0.00154 * (-200) * a / (wavelength * L)) * (Math.sin(0.00154 * (-200) * a / (wavelength * L))) / (0.00154 * (-200) * a / (wavelength * L)));
+          for (ival = -199; ival <= 200; ival++) {
+            context.lineTo(xBase + 200 + ival, yBase + 160 - (80) * (1 + Math.cos(0.00308 * (ival) * d / (wavelength * L))) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)));
+          }
+          context.stroke();
+
+          context.fillRect(xBase + 200 - (d / 3) - (a / 3), yBase + 200 + 5, 2 * a / 3, 40);
+          context.fillRect(xBase + 200 + (d / 3) - (a / 3), yBase + 200 + 5, 2 * a / 3, 40);
+
+          context.lineWidth = 1;
+
+          for (ival = -199; ival <= 199; ival++) {
+            redness = Math.floor((210) * Math.log(1.2 + ((1 + Math.cos(0.00308 * (ival) * d / (wavelength * L))) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)) * (Math.sin(0.00154 * ival * a / (wavelength * L))) / (0.00154 * ival * a / (wavelength * L)))));
+            //            console.log("In the drawMotion function, with redness = " + redness);
+            greenness = redness;
+            blueness = redness;
+            if (wavelength > 0.64) {
+              greenness = blueness = 1;
+            }
+            else {
+              if (wavelength < 0.41) {
+                greenness = 1;
+              }
+              else {
+                redness = blueness = 1;
+              }
+            }
+            redString = redness.toString(16);
+            if (redString.length == 1) redString = "0" + redString;
+            greenString = greenness.toString(16);
+            if (greenString.length == 1) greenString = "0" + greenString;
+            blueString = blueness.toString(16);
+            if (blueString.length == 1) blueString = "0" + blueString;
+
+            colorString = "#" + redString + greenString + blueString;
+            context.strokeStyle = colorString;
+            //      console.log("In the drawMotion function, with redString = " + redString);
+
+            context.beginPath();
+            context.moveTo(xBase + 200 + ival, yBase - 75);
+            context.lineTo(xBase + 200 + ival, yBase - 35);
+            context.stroke();
+          }
+
+        }
+
+
+        // draw center-of-mass graph, too
+        //            if (myCheck.checked) {
+        //              context.strokeStyle = '#d0d';
+        //              context.beginPath();
+        //              context.moveTo(xBase, yBase+80-(40/yIncrement)*(m1*oldv1+m2*oldv2));
+        //              for (ival = 1; ival <=index; ival++) {
+        //               if (ival <= collisionIndex) context.lineTo(xBase+20.0*ival/20.0, yBase+80-(40/yIncrement)*(m1*oldv1+m2*oldv2));
+        //               else context.lineTo(xBase+20.0*ival/20.0, yBase+80-(40/yIncrement)*(m1*v1+m2*v2));
+        //              }
+        //              context.stroke();
+        //             }
+
+
+
+        // set line color
+        context.strokeStyle = '#999';
+        context.lineWidth = 2;
+
+
+        // track
+        //         context.strokeStyle = '#000';
+        //         context.lineWidth = 8;
+        //         context.beginPath();
+        //         context.moveTo(0, y1+55);
+        //         context.lineTo(0+canvas.width, y1+55);
+        //         context.stroke();
+
+        // draw the scenario
+
+        time = index / 20.0;
+
+        //     console.log("In the drawMotion function, with runFlag = " + runFlag + " x2 = " + x2);
+
+
+        // graph title
+        context.font = 'bold 16pt Calibri';
+        context.fillStyle = 'purple';
+        context.textAlign = 'center';
+        context.fillText(graphTitle, (canvas.width) / 2, 30);
+
+        context.font = '16pt Calibri';
+        context.fillStyle = 'black';
+
+        context.fillText("screen", xBase + 440, yBase - 60);
+        context.fillText("screen", xBase + 440, yBase + 70);
+
+
+
+        //           var vOneLabel = 'Cart 1, velocity = ';
+        //           vOneLabel = vOneLabel + v1.toFixed(2) + ' m/s';
+        //           context.textAlign = 'left';
+        //           context.fillText(vOneLabel, xBase-50, 355);
+
+        //           var vTwoLabel = 'Cart 2, velocity = ';
+        //           vTwoLabel = vTwoLabel + v2.toFixed(2) + ' m/s';
+        //           context.textAlign = 'left';
+        //           context.fillText(vTwoLabel, xBase+240, 355);
+
+      }
+    }
+    
+
+    function runMotion() {
+      drawMotion();
+      if (runFlag == 1) {
+        timer = window.setTimeout(runMotion, 1000 / 60);
+      }
+    }
+
+
+  </script>
+
+
+<!-- Place your own code above -->
+
+</section>
+
+<section data-bs-version="5.1" class="features22 cid-tUUCKno67K" id="features022-17">
+  
+
+  
+  
+  <div class="container-fluid">
+    
+    <div class="row mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }">
+      <div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            <div class="iconfont-wrapper">
+              <span class="mbr-iconfont mobi-mbri-idea mobi-mbri"></span>
+            </div>
+            <h5 class="card-title mbr-fonts-style display-5"><strong>Wave diffraction</strong></h5>
+            <p class="card-text mbr-fonts-style display-7">Wave diffraction is a fundamental phenomenon in physics where waves encounter an obstacle or opening and bend around it. This website provides an interactive platform to visually explore and understand this concept.</p>
+
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            <div class="iconfont-wrapper">
+              <span class="mbr-iconfont mobi-mbri-touch-swipe mobi-mbri"></span>
+            </div>
+            <h5 class="card-title mbr-fonts-style display-5"><strong>Using the simulation</strong></h5>
+            <p class="card-text mbr-fonts-style display-7">Using the simulation is straightforward. You can manipulate the behavior of the waves by adjusting the width of the slit using a slider. Additionally, you have the option to choose between two different color schemes to observe the wave patterns more clearly.</p>
+
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            <div class="iconfont-wrapper">
+              <span class="mbr-iconfont mbrib-bookmark"></span>
+            </div>
+            <h5 class="card-title mbr-fonts-style display-5"><strong>Learnings</strong></h5>
+            <p class="card-text mbr-fonts-style display-7">By using this simulation, you can gain insights into how changing the width of the slit influences the diffraction pattern of waves. This is a fundamental concept in wave physics and has various real-world applications, making it a valuable educational tool.</p>
+
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            <div class="iconfont-wrapper">
+              <span class="mbr-iconfont mobi-mbri-change-style mobi-mbri"></span>
+            </div>
+            <h5 class="card-title mbr-fonts-style display-5">
+              <strong>Design</strong>
+            </h5>
+            <p class="card-text mbr-fonts-style display-7">The extent of user control in the simulation may vary, so please explore the website to determine if such options are available. Some simulations allow you to adjust wave parameters like frequency and speed for more in-depth exploration.</p>
+
+            
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer3 cid-tUV2DwPUMu" once="footers" id="footer3-1g">
+
+    
+
+    
+
+    <div class="container-fluid">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-links">
+                <ul class="foot-menu">
+                    
+                    
+                    
+                    
+                    
+                <li class="foot-menu-item mbr-fonts-style display-7"><a class="text-white text-primary" href="index.html#team1-1h" target="_blank">About us</a>
+                    </li><li class="foot-menu-item mbr-fonts-style display-7"><strong><a href="index.html#features1-b" class="text-primary">Features</a></strong></li><li class="foot-menu-item mbr-fonts-style display-7">
+                        <a class="text-white text-primary" href="contact.html#top" target="_blank"><strong>Contact Us</strong></a>
+                    </li><li class="foot-menu-item mbr-fonts-style display-7"><strong><a href="index.html#header2-9" class="text-primary">Home Page</a></strong></li><li class="foot-menu-item mbr-fonts-style display-7">Simulations</li></ul>
+            </div>
+            
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7"></p>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p></section>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/vimeoplayer/player.js"></script>  <script src="assets/embla/embla.min.js"></script>  <script src="assets/embla/script.js"></script>  <script src="assets/sociallikes/social-likes.js"></script>  <script src="assets/theme/js/script.js"></script>  
+
+  
+  
+  </body>
+</html>
